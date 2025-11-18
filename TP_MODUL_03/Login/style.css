@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.form-box {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 2px dashed black;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid black;
+    font-family: cursive;
+    border-radius: 10px;
+}
+
+input:focus {
+    border-color: blue;
+    background-color: #e3f0ff;
+    outline: none;
+}
+
+button:hover {
+    border-color: black;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+
+
