@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    { "text": "Buy groceries", "completed": false },
+    { "text": "Finish project report", "completed": true },
+    { "text": "Call dentist for appointment", "completed": false },
+    { "text": "Go for a run", "completed": false },
+    { "text": "Read a chapter of a book", "completed": true }
+  ]
+}
