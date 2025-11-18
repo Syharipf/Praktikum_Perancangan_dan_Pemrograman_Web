@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NIM_Soal3</title>
+	<link type="text/css" rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<center>
+		<div class="main">
+			<div class="title">Hitung Pythagoras</div>
+	  		<input type="number" class="form-control" id="a" placeholder="Nilai A">
+		    <input type="number" class="form-control" id="b" placeholder="Nilai B">
+		    <button onclick="hitungPythagoras()">Hitung!</button>
+		    <div class="form-group">
+		      	<input type="number" class="form-control" id="hasil" disabled>
+		    </div>
+	    </div>
+	</center>
+	
+	<script type="text/javascript">
+		function hitungPythagoras() {
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+
+            if (isNaN(a) || isNaN(b)) {
+                alert("Masukkan nilai yang valid untuk A dan B.");
+                document.getElementById('hasil').value = "";
+                return;
+            }
+
+            var a_squared = Math.pow(a, 2);
+            var b_squared = Math.pow(b, 2);
+            var sum_squares = a_squared + b_squared;
+
+            var hypotenuse = Math.sqrt(sum_squares);
+
+            document.getElementById('hasil').value = Math.round(hypotenuse)	;
+		}
+	</script>
+
+</body>
+</html>
