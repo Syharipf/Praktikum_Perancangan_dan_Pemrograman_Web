@@ -1,0 +1,32 @@
+<html a>
+    <script>
+         function tes() {
+                var table = document.getElementById("myTable");
+
+                var newRow = table.insertRow(-1);
+
+                var cellData = ["1", "2", "3"];
+
+                for (var i = 0; i < cellData.length; i++) {
+                    var newCell = newRow.insertCell(i);
+                    
+                    newCell.innerHTML = cellData[i];
+                }
+            }
+    </script>
+    <body>
+            <button onclick="tes()">Add Row</button>
+            <table id='myTable' border="1">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+            </table>
+    </body>
+</html>
