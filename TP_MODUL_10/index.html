@@ -1,32 +1,24 @@
-<html>
-    <script>
-         function tes() {
-                var table = document.getElementById("myTable");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sapa Menggunakan AJAX dan PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                var newRow = table.insertRow(-1);
+<div align="center" class="card">
+    <h3>Form Sapa Menggunakan AJAX dan PHP</h3>
 
-                var cellData = ["1", "2", "3"];
+    <label>Masukkan Nama Anda:</label>
+    <input type="text" id="nama" placeholder="Contoh: Alex">
 
-                for (var i = 0; i < cellData.length; i++) {
-                    var newCell = newRow.insertCell(i);
-                    
-                    newCell.innerHTML = cellData[i];
-                }
-            }
-    </script>
-    <body>
-            <button onclick="tes()">Add Row</button>
-            <table id='myTable' border="1">
-                <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>F</td>
-                </tr>
-            </table>
-    </body>
-</html>
+    <button onclick="kirimData()">Kirim</button>
+
+    <div id="respon" class="response">Menunggu input...</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
